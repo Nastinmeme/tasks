@@ -13,12 +13,19 @@ public class Task {
         this.status = status;
     }
 
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (!(obj instanceof Task)) return false;
         Task task = (Task) obj;
         return id == task.id && Objects.equals(taskName, task.taskName) && Objects.equals(taskDescription, task.taskDescription) && Objects.equals(status, task.status);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(taskName, taskDescription, id, status);
     }
 
     public String getTaskName() {

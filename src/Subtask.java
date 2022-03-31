@@ -1,8 +1,8 @@
+import java.util.ArrayList;
+
 public class Subtask extends Task{
-   private int epicId;
-  public Subtask(String taskName, String taskDescription, int id, String status ){
-      super(taskName, taskDescription, id,status);
-  }
+    //Epic epic;
+    private int epicId;
 
     public Subtask(String taskName, String taskDescription, int id, String status,int epicId) {
         super(taskName, taskDescription, id,status);
