@@ -12,14 +12,11 @@ public class Epic extends Task {
         super(taskName, taskDescription, id, status);
     }
 
-
     public ArrayList<Subtask> getSubstasks() {
-
         return substasks;
     }
 
     public void setSubstasks(ArrayList<Subtask> substasks) {
-
         this.substasks = substasks;
     }
 }

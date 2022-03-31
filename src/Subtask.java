@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class Subtask extends Task{
-    //Epic epic;
     private int epicId;
 
     public Subtask(String taskName, String taskDescription, int id, String status,int epicId) {
